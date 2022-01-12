@@ -13,7 +13,6 @@ public class PersistenceJPAConfig {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("org.apache.derby.jdbc.ClientDriver");
-//		dataSource.setUrl("jdbc:derby:memory:vac_booking;create=true");
 		dataSource.setUrl("jdbc:derby://localhost/vac_booking;create=true");
 		return dataSource;
 	}
